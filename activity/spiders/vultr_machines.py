@@ -1,6 +1,5 @@
-import activity
-import logging
 import json
+import csv
 import scrapy
 import os
 
@@ -67,5 +66,11 @@ class VultrMachinesSpider(scrapy.Spider):
 
                 f.write(']')
                 f.close()
-
-        
+            elif self.option == '--save_csv':
+                if os.path.exists("dataset.csv"):
+                    os.remove("dataset.csv")
+                
+                with open('dataset.csv', 'w', newline='', encoding='utf8') as f:
+                    writer = csv.writer(f)
+                    for machine in machines:
+                        writer.writerow([machine['brand'], machine['cpu'], machine['memory'], machine['bandwidth'], machine['price']]) # namedtuple breaks convention public fields have single underscore
