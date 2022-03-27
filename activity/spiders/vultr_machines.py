@@ -55,5 +55,17 @@ class VultrMachinesSpider(scrapy.Spider):
         if self.option:
             if self.option == '--print':
                 print(machines)
+            elif self.option == '--save_json':
+                if os.path.exists("dataset.json"):
+                    os.remove("dataset.json")
+
+                f = open('dataset.json', 'a')
+                f.write('[\n')
+                for machine in machines:
+                    f.write(json.dumps(machine.__dict__.get("_values")))
+                    f.write(',\n')
+
+                f.write(']')
+                f.close()
 
         
