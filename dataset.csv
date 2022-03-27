@@ -1,0 +1,88 @@
+AMD,1,1,2.00,$6.00
+AMD,1,2,3.00,$12.00
+AMD,2,2,4.00,$18.00
+AMD,2,4,5.00,$24.00
+AMD,4,8,6.00,$48.00
+AMD,4,12,7.00,$72.00
+AMD,8,16,8.00,$96.00
+AMD,12,24,12.00,$144.00
+Intel,1,1,2.00,$6.00
+Intel,1,2,3.00,$12.00
+Intel,2,2,4.00,$18.00
+Intel,2,4,5.00,$24.00
+Intel,4,8,6.00,$48.00
+Intel,4,12,7.00,$72.00
+Intel,8,16,8.00,$96.00
+Intel,12,24,12.00,$144.00
+Intel,1,1,1.00,$6
+Intel,1,2,2.00,$12
+Intel,2,2,3.00,$18
+Intel,2,4,3.00,$24
+Intel,3,8,4.00,$48
+Intel,4,16,5.00,$96
+Intel,6,24,6.00,$144
+Intel,8,32,7.00,$192
+Intel,12,48,8.00,$256
+Intel,1,0.5,0.50,$2.50
+Intel,1,0.5,0.50,$3.50
+Intel,1,1,1.00,$5
+Intel,1,2,2.00,$10
+Intel,2,4,3.00,$20
+Intel,4,8,4.00,$40
+Intel,6,16,5.00,$80
+Intel,8,32,6.00,$160
+Intel,16,64,10.00,$320
+Intel,24,96,15.00,$640
+Another Brand,1,4,4.00,$30.00
+Another Brand,2,8,5.00,$60.00
+Another Brand,4,16,6.00,$120.00
+Another Brand,8,32,7.00,$240.00
+Another Brand,16,64,8.00,$480.00
+Another Brand,24,96,9.00,$720.00
+Another Brand,32,128,9.00,$960.00
+Another Brand,40,160,10.00,"$1,200.00"
+Another Brand,64,192,11.00,"$1,920.00"
+Another Brand,96,255,12.00,"$3,840.00"
+Another Brand,1,2,4.00,$28.00
+Another Brand,2,4,5.00,$40.00
+Another Brand,2,4,5.00,$45.00
+Another Brand,4,8,6.00,$80.00
+Another Brand,4,8,6.00,$90.00
+Another Brand,8,16,7.00,$160.00
+Another Brand,8,16,7.00,$180.00
+Another Brand,16,32,8.00,$320.00
+Another Brand,16,32,8.00,$360.00
+Another Brand,32,64,9.00,$640.00
+Another Brand,32,64,10.00,$720.00
+Another Brand,1,8,5.00,$40.00
+Another Brand,2,16,6.00,$80.00
+Another Brand,2,16,6.00,$100.00
+Another Brand,2,16,6.00,$125.00
+Another Brand,4,32,8.00,$160.00
+Another Brand,4,32,8.00,$195.00
+Another Brand,4,32,8.00,$250.00
+Another Brand,8,64,9.00,$320.00
+Another Brand,8,64,9.00,$390.00
+Another Brand,8,64,9.00,$500.00
+Another Brand,16,128,10.00,$640.00
+Another Brand,16,128,10.00,$785.00
+Another Brand,16,128,10.00,"$1,000.00"
+Another Brand,24,192,11.00,$960.00
+Another Brand,24,192,11.00,"$1,175.00"
+Another Brand,24,192,11.00,"$1,500.00"
+Another Brand,32,256,12.00,"$1,280.00"
+Another Brand,32,256,12.00,"$1,565.00"
+Another Brand,32,256,12.00,"$2,000.00"
+Another Brand,1,8,4.00,$75.00
+Another Brand,2,16,6.00,$125.00
+Another Brand,2,16,6.00,$155.00
+Another Brand,4,32,7.00,$250.00
+Another Brand,4,32,7.00,$310.00
+Another Brand,8,64,8.00,$500.00
+Another Brand,8,64,8.00,$620.00
+Another Brand,16,128,9.00,"$1,000.00"
+Another Brand,16,128,9.00,"$1,240.00"
+Another Brand,24,192,10.00,"$1,500.00"
+Another Brand,24,192,10.00,"$1,850.00"
+Another Brand,32,256,12.00,"$2,000.00"
+Another Brand,32,256,14.00,"$2,480.00"

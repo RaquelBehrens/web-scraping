@@ -51,6 +51,10 @@ class VultrMachinesSpider(scrapy.Spider):
 
                         machines.append(machine)
         
+        self.operations(machines)
+        yield machines
+
+    def operations(self, machines):
         if self.option:
             if self.option == '--print':
                 print(machines)
