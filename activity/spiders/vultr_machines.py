@@ -44,9 +44,9 @@ class VultrMachinesSpider(scrapy.Spider):
                     for content in contents:
                         machine = Machine(brand=brand_text,
                                             cpu=content.xpath('.//div[contains(text(), "CPU")]/strong/text()').extract_first(),
-                                            memory=content.xpath('.//div[span[contains(text(), "Memory")]]/strong/text()').extract_first(),
-                                            storage=content.xpath('.//div[span[contains(text(), "Storage")]]/strong/text()').extract_first(),
-                                            bandwidth=content.xpath('.//div[span[contains(text(), "Bandwidth")]]/strong/text()').extract_first(),
+                                            memory=content.xpath('.//div[span[contains(text(), "Memory")]]/strong/text()').extract_first()+self.sanitize_string(content.xpath('.//div[span[contains(text(), "Memory")]]/text()').extract_first()),
+                                            storage=content.xpath('.//div[span[contains(text(), "Storage")]]/strong/text()').extract_first()+self.sanitize_string(content.xpath('.//div[span[contains(text(), "Storage")]]/text()').extract_first()),
+                                            bandwidth=content.xpath('.//div[span[contains(text(), "Bandwidth")]]/strong/text()').extract_first()+self.sanitize_string(content.xpath('.//div[span[contains(text(), "Bandwidth")]]/text()').extract_first()),
                                             price=content.xpath('.//div[contains(text(), "/mo")]/strong/text()').extract_first().strip(" "))
 
                         machines.append(machine)
@@ -78,3 +78,12 @@ class VultrMachinesSpider(scrapy.Spider):
                     writer = csv.writer(f)
                     for machine in machines:
                         writer.writerow([machine['brand'], machine['cpu'], machine['memory'], machine['bandwidth'], machine['price']]) # namedtuple breaks convention public fields have single underscore
+
+    def sanitize_string(self, string):
+        if not string:
+            return ''
+
+        to_remove = ['/', '\\', '-', '(', ')', '.', ',', ':', u'º', u'°']
+        for token in to_remove:
+            string = string.replace(token, '').strip()
+        return string
