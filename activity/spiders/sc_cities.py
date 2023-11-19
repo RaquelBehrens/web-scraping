@@ -1,12 +1,5 @@
-import json
-import csv
 import scrapy
-import os
-import html
-import unicodedata
 from activity.items import City
-from scrapy import signals
-from scrapy.signalmanager import dispatcher
 
 
 class SCCities(scrapy.Spider):
