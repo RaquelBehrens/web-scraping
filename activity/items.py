@@ -5,12 +5,11 @@
 
 import scrapy
 
-
-class Machine(scrapy.Item):
-    brand = scrapy.Field(value_type=str)
-    cpu = scrapy.Field(value_type=str)
-    memory = scrapy.Field(value_type=str)
-    storage = scrapy.Field(value_type=str)
-    bandwidth = scrapy.Field(value_type=str)
-    price = scrapy.Field(value_type=str)
-
+class City(scrapy.Item):
+    nome = scrapy.Field(value_type=str)
+    distancia_da_capital = scrapy.Field(value_type=str)
+    area_total = scrapy.Field(value_type=str)
+    populacao = scrapy.Field(value_type=str)
+    densidade = scrapy.Field(value_type=str)
+    altitude = scrapy.Field(value_type=str)
+    idh = scrapy.Field(value_type=str)

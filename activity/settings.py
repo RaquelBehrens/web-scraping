@@ -65,6 +65,10 @@ ROBOTSTXT_OBEY = True
 #ITEM_PIPELINES = {
 #    'activity.pipelines.ActivityPipeline': 300,
 #}
+ITEM_PIPELINES = {
+    'activity.pipelines.JsonWriterPipeline': 400,
+    'activity.pipelines.CSVWriterPipeline': 400,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
