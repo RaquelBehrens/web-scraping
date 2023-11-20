@@ -29,7 +29,7 @@ class SCCities(scrapy.Spider):
                             distancia_da_capital=self.decode_string(infobox_table.xpath('.//tr[.//*[contains(text(), "Distância até a")]]/td[2]/text()').extract_first()),
                             area_total=self.decode_string(infobox_table.xpath('.//tr[.//*[contains(text(), "rea total")]]/td[2]/text()').extract_first()),
                             populacao=self.decode_string(infobox_table.xpath('.//tr[.//*[contains(text(), "Popula")]]/td[2]/text()').extract_first()),
-                            densidade=self.decode_string(infobox_table.xpath('.//tr[.//*[contains(text(), "Densidade")]]/td[2]/text()').extract_first()),
+                            densidade=self.decode_string(infobox_table.xpath('.//tr[.//*[contains(text(), "ensidade")]]/td[2]/span/text()').extract_first()),
                             altitude=self.decode_string(infobox_table.xpath('.//tr[.//*[contains(text(), "Altitude")]]/td[2]/text()').extract_first()),
                             idh=self.decode_string(infobox_table.xpath('.//tr[.//*[contains(text(), "IDH")]]/td[2]/text()').extract_first()))
 
